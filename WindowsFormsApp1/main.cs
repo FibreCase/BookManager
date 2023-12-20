@@ -16,28 +16,23 @@ namespace WindowsFormsApp1
         public main()
         {
             InitializeComponent();
+            populate();
         }
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\fibre\Documents\bookinfo.mdf;Integrated Security=True;Connect Timeout=30");
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void populate()
         {
+            con.Open();
 
-        }
+            string query = "select * from bookinfo";
+            SqlDataAdapter sda = new SqlDataAdapter(query, con);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
+            con.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -48,7 +43,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (name.Text == "" || isbn.Text == "" || type.Text == "")
+            if (name.Text == "" || isbn.Text == "")
             {
                 MessageBox.Show("Add more information!");
             }
@@ -58,15 +53,28 @@ namespace WindowsFormsApp1
                 {
                     con.Open();
 
-                    string query = "insert into bookinfo (name,isbn,type) values ('" + name.Text + "','" + isbn.Text + "','" + type.Text + "',')";
-
+                    string query = "insert into bookinfo values ('" + name.Text + "','" + type.Text + "','" + isbn.Text + "','" + note.Text + "','" + 1 + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    outputcase.Text = "Book added successfully!";
                     con.Close();
                 }
-                catch (Exception ex)
+                catch (Exception ex)    
                 {
-                    MessageBox.Show(ex.Message);
+                    outputcase.Text = ex.Message;
+                    con.Close();
                 }
             }
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
