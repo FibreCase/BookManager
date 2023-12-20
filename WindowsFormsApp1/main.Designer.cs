@@ -48,14 +48,14 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.info = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.outputcase = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -255,6 +255,28 @@ namespace WindowsFormsApp1
             this.panel2.Size = new System.Drawing.Size(429, 316);
             this.panel2.TabIndex = 17;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.ForeColor = System.Drawing.Color.RosyBrown;
+            this.button4.Location = new System.Drawing.Point(262, 244);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 57);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Owned";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button5.ForeColor = System.Drawing.Color.RosyBrown;
+            this.button5.Location = new System.Drawing.Point(104, 244);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(153, 57);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Lended";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -318,28 +340,6 @@ namespace WindowsFormsApp1
             this.dataGridView1.Size = new System.Drawing.Size(706, 714);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button5.Location = new System.Drawing.Point(104, 244);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(153, 57);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Lended";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.RosyBrown;
-            this.button4.Location = new System.Drawing.Point(262, 244);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(153, 57);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Owned";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // outputcase
             // 
             this.outputcase.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -367,8 +367,8 @@ namespace WindowsFormsApp1
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1600, 900);
             this.Controls.Add(this.outputcase);
