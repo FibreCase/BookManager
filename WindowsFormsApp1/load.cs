@@ -22,20 +22,26 @@ namespace WindowsFormsApp1
         {
             timer1.Start();
         }
-        
-        /*private void initdatabase()
-        {
-            if (!login.IsFileExist(@System.Environment.CurrentDirectory + "\\bookinfo.mdf"))
-            {
-                label1.Text = "Database is creating...";
-                //create database
-                string query = "CREATE TABLE [dbo].[Bookinfo] (\r\n    [Name]   VARCHAR (50) NOT NULL,\r\n    [Type]   VARCHAR (50) NULL,\r\n    [ISBN]   BIGINT       NOT NULL,\r\n    [Note]   VARCHAR (50) NULL,\r\n    [Status] INT          DEFAULT ((1)) NOT NULL,\r\n    PRIMARY KEY CLUSTERED ([Name] ASC)\r\n);";
-                SqlCommand cmd = new SqlCommand(query);
-                
 
-                label1.Text = "LOADING";
+        private void initdatabaase()
+        {
+            if (login.IsFileExist(@System.Environment.CurrentDirectory + "\\bookinfo.mdf"))
+            {
+                //database exists
             }
-        }*/
+            else
+            {
+                label2.Text = "Initializing database...";
+                System.IO.File.Copy(@"https://fibrecase..japaneast.cloudapp.azure.com/bookinfo.mdf", @System.Environment.CurrentDirectory + "\\bookinfo.mdf");
+                //database not exists
+                SqlConnection con = new SqlConnection(Global.databaseurl);
+                con.Open();
+                string query = "create table bookinfo (name varchar(50),type varchar(50),isbn varchar(50),note varchar(50),status int)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+        }
 
         private void progressBar1_Click(object sender, EventArgs e)
         {
