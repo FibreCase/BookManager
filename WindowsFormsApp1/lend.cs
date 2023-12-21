@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         }
 
         private string str = System.Environment.CurrentDirectory;
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\CodeLab\ProC++\Study\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\bookinfo.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@Global.databaseurl);
 
         private void populate()
         {

@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +58,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(279, 194);
+            this.textBox1.Location = new System.Drawing.Point(279, 174);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(509, 53);
             this.textBox1.TabIndex = 2;
@@ -67,7 +68,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.textBox2.Location = new System.Drawing.Point(279, 253);
+            this.textBox2.Location = new System.Drawing.Point(279, 233);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(509, 53);
             this.textBox2.TabIndex = 3;
@@ -79,7 +80,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(79, 194);
+            this.label2.Location = new System.Drawing.Point(79, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(194, 46);
             this.label2.TabIndex = 4;
@@ -91,7 +92,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(79, 253);
+            this.label3.Location = new System.Drawing.Point(79, 236);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 46);
             this.label3.TabIndex = 5;
@@ -167,6 +168,18 @@
             this.panel4.Size = new System.Drawing.Size(100, 100);
             this.panel4.TabIndex = 22;
             // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.button3.Location = new System.Drawing.Point(50, 322);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(235, 66);
+            this.button3.TabIndex = 23;
+            this.button3.Text = "SIGNUP";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // login
             // 
             this.AcceptButton = this.button1;
@@ -175,6 +188,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._980;
             this.ClientSize = new System.Drawing.Size(800, 400);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -209,5 +223,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button3;
     }
 }

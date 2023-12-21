@@ -72,9 +72,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(670, 280);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 62);
+            this.label2.Size = new System.Drawing.Size(98, 62);
             this.label2.TabIndex = 2;
-            this.label2.Text = "%";
+            this.label2.Text = "0%";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
