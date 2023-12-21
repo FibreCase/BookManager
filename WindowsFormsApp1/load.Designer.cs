@@ -70,7 +70,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(696, 280);
+            this.label2.Location = new System.Drawing.Point(670, 280);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 62);
             this.label2.TabIndex = 2;

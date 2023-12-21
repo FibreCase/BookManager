@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
         private void timer1_Tick(object sender, EventArgs e)
         {
             Random ran = new Random();
-            int n = ran.Next(20);
+            int n = ran.Next(5);
             ticks += n;
             if (ticks > 100)
             {
