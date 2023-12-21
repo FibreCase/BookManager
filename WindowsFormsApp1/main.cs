@@ -69,6 +69,7 @@ namespace WindowsFormsApp1
                     con.Close();
                 }
             }
+            populate();
         }
 
         private void label16_Click(object sender, EventArgs e)
@@ -108,6 +109,39 @@ namespace WindowsFormsApp1
             this.Hide();
             guide guide = new guide();
             guide.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (isbn.Text == "")
+            {
+                MessageBox.Show("Add more information!");
+            }
+            else
+            {
+                try
+                {
+                    con.Open();
+
+                    string query = "delete from bookinfo where isbn = '" + isbn.Text + "'";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.ExecuteNonQuery();
+                    outputcase.Text = "Book deleted successfully!";
+
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    outputcase.Text = ex.Message;
+                    con.Close();
+                }
+            }
+            populate();
         }
     }
 }
