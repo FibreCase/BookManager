@@ -26,9 +26,10 @@ namespace WindowsFormsApp1
         {
             if (textBox1.Text=="Admin"&&textBox2.Text=="123456")
             {
+                this.Hide();
                 load load = new load();
                 load.Show();
-                this.Hide();
+                
             }
             else
             {
@@ -40,6 +41,12 @@ namespace WindowsFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

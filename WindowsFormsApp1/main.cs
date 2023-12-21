@@ -21,8 +21,9 @@ namespace WindowsFormsApp1
 
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\fibre\Documents\bookinfo.mdf;Integrated Security=True;Connect Timeout=30");
 
-        private void populate()
+        private void populate() 
         {
+            //show all books
             con.Open();
 
             string query = "select * from bookinfo";
@@ -37,6 +38,7 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
+            //exit button
             this.Close();
             Application.Exit();
         }
@@ -49,6 +51,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                //add new book
                 try
                 {
                     con.Open();
@@ -57,6 +60,7 @@ namespace WindowsFormsApp1
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.ExecuteNonQuery();
                     outputcase.Text = "Book added successfully!";
+
                     con.Close();
                 }
                 catch (Exception ex)    
@@ -75,6 +79,35 @@ namespace WindowsFormsApp1
         private void main_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            populate();
+        }
+
+        private void label15_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            login login = new login();
+            login.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            guide guide = new guide();
+            guide.Show();
         }
     }
 }

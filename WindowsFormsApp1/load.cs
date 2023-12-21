@@ -44,8 +44,8 @@ namespace WindowsFormsApp1
             {
                 timer1.Stop();
                 this.Hide();
-                main main= new main();
-                main.Show();
+                guide guide = new guide();
+                guide.Show();
             }
         }
 

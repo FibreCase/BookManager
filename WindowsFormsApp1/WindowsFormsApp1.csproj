@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="lend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lend.Designer.cs">
+      <DependentUpon>lend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="guide.Designer.cs">
+      <DependentUpon>guide.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="guide.resx">
+      <DependentUpon>guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lend.resx">
+      <DependentUpon>lend.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -100,6 +119,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\980.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\980 - 副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-160919153T70-L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-160919153T70-L1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
