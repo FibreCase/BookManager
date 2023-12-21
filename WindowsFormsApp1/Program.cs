@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
 
     public static class Global
     {
+        public static string usernameaa = "";
         public static string databaseurl = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=" + System.Environment.CurrentDirectory + "\\bookinfo.mdf;Integrated Security=True;Connect Timeout=30";
     }
 }

@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public guide()
         {
             InitializeComponent();
+            Usernametextbox.Text = Global.usernameaa;
         }
 
         private void button2_Click(object sender, EventArgs e)

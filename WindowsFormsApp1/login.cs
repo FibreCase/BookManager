@@ -59,6 +59,7 @@ namespace WindowsFormsApp1
                     string password = parts[1];
                     if (textBox1.Text == name && Sha256(textBox2.Text) == password)
                     {
+                        Global.usernameaa = name;
                         situa = 1;
                         this.Hide();
                         load load = new load();
