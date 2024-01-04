@@ -18,6 +18,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // 用双缓冲绘制窗口的所有子控件
+                return cp;
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();

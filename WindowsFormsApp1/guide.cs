@@ -18,6 +18,16 @@ namespace WindowsFormsApp1
             Usernametextbox.Text = Global.usernameaa;
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // 用双缓冲绘制窗口的所有子控件
+                return cp;
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();

@@ -19,6 +19,16 @@ namespace WindowsFormsApp1
             populate();
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // 用双缓冲绘制窗口的所有子控件
+                return cp;
+            }
+        }
+
         private string str = System.Environment.CurrentDirectory;
         SqlConnection con = new SqlConnection(@Global.databaseurl);
 
@@ -107,6 +117,11 @@ namespace WindowsFormsApp1
 
             outputcase.Text = "Book returned successfully!";
             populate();
+        }
+
+        private void lend_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
