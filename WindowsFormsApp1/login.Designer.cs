@@ -40,6 +40,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +103,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button1.Location = new System.Drawing.Point(302, 322);
+            this.button1.Location = new System.Drawing.Point(302, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(235, 66);
             this.button1.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.IndianRed;
-            this.button2.Location = new System.Drawing.Point(553, 322);
+            this.button2.Location = new System.Drawing.Point(553, 321);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(235, 66);
             this.button2.TabIndex = 7;
@@ -140,11 +141,12 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(578, 36);
+            this.label5.Location = new System.Drawing.Point(587, 36);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 27);
+            this.label5.Size = new System.Drawing.Size(95, 27);
             this.label5.TabIndex = 18;
-            this.label5.Text = "GNU v3.0";
+            this.label5.Text = "GPL v3.0";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -157,6 +159,7 @@
             this.label6.Size = new System.Drawing.Size(219, 27);
             this.label6.TabIndex = 17;
             this.label6.Text = "Pulished by FibreCase";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel4
             // 
@@ -172,13 +175,25 @@
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.button3.Location = new System.Drawing.Point(50, 322);
+            this.button3.Location = new System.Drawing.Point(50, 321);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(235, 66);
             this.button3.TabIndex = 23;
             this.button3.Text = "SIGNUP";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.Location = new System.Drawing.Point(20, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(457, 27);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Developed by XuYing&&MaDongxing&&LiShunqi";
             // 
             // login
             // 
@@ -188,6 +203,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._980;
             this.ClientSize = new System.Drawing.Size(800, 400);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label5);
@@ -224,5 +240,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label7;
     }
 }

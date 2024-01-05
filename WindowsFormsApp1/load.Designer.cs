@@ -95,11 +95,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(684, 36);
+            this.label3.Location = new System.Drawing.Point(693, 36);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 27);
+            this.label3.Size = new System.Drawing.Size(95, 27);
             this.label3.TabIndex = 18;
-            this.label3.Text = "GNU v3.0";
+            this.label3.Text = "GPL v3.0";
             // 
             // label5
             // 
