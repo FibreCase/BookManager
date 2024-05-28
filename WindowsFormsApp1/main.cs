@@ -153,5 +153,10 @@ namespace WindowsFormsApp1
             }
             populate();
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

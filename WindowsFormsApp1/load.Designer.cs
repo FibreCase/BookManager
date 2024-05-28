@@ -33,7 +33,6 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -44,9 +43,10 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(12, 270);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(304, 75);
+            this.label1.Size = new System.Drawing.Size(200, 75);
             this.label1.TabIndex = 0;
-            this.label1.Text = "LOADING";
+            this.label1.Text = "加载中";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // progressBar1
             // 
@@ -74,25 +74,12 @@
             this.label2.Text = "0%";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(18, 240);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 41);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "BookManager";
-            // 
             // load
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(800, 400);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -112,7 +99,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
     }
 }
 

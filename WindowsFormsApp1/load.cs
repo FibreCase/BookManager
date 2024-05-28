@@ -39,18 +39,6 @@ namespace WindowsFormsApp1
             {
                 //database exists
             }
-            else
-            {
-                label2.Text = "Initializing database...";
-                System.IO.File.Copy(@"https://fibrecase..japaneast.cloudapp.azure.com/bookinfo.mdf", @System.Environment.CurrentDirectory + "\\bookinfo.mdf");
-                //database not exists
-                SqlConnection con = new SqlConnection(Global.databaseurl);
-                con.Open();
-                string query = "create table bookinfo (name varchar(50),type varchar(50),isbn varchar(50),note varchar(50),status int)";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -81,6 +69,11 @@ namespace WindowsFormsApp1
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

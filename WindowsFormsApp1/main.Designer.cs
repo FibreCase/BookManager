@@ -80,6 +80,7 @@ namespace WindowsFormsApp1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(429, 425);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // button3
             // 
@@ -89,7 +90,7 @@ namespace WindowsFormsApp1
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 57);
             this.button3.TabIndex = 17;
-            this.button3.Text = "DELETE";
+            this.button3.Text = "删除";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -101,7 +102,7 @@ namespace WindowsFormsApp1
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 57);
             this.button1.TabIndex = 16;
-            this.button1.Text = "ADD";
+            this.button1.Text = "添加";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -112,9 +113,9 @@ namespace WindowsFormsApp1
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label10.Location = new System.Drawing.Point(9, 149);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 47);
+            this.label10.Size = new System.Drawing.Size(92, 47);
             this.label10.TabIndex = 15;
-            this.label10.Text = "Type";
+            this.label10.Text = "类型";
             // 
             // label8
             // 
@@ -123,9 +124,9 @@ namespace WindowsFormsApp1
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(9, 267);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 47);
+            this.label8.Size = new System.Drawing.Size(92, 47);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Note";
+            this.label8.Text = "备注";
             // 
             // label7
             // 
@@ -155,9 +156,9 @@ namespace WindowsFormsApp1
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(9, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 47);
+            this.label5.Size = new System.Drawing.Size(92, 47);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Name";
+            this.label5.Text = "书名";
             // 
             // note
             // 
@@ -202,9 +203,9 @@ namespace WindowsFormsApp1
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(4, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 52);
+            this.label4.Size = new System.Drawing.Size(182, 52);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Edit a Book";
+            this.label4.Text = "增删管理";
             // 
             // dataGridView1
             // 
@@ -254,7 +255,7 @@ namespace WindowsFormsApp1
             this.outputcase.Name = "outputcase";
             this.outputcase.Size = new System.Drawing.Size(429, 324);
             this.outputcase.TabIndex = 0;
-            this.outputcase.Text = "Start you work!";
+            this.outputcase.Text = "你好！";
             this.outputcase.Click += new System.EventHandler(this.label16_Click);
             // 
             // button7
@@ -265,7 +266,7 @@ namespace WindowsFormsApp1
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(175, 57);
             this.button7.TabIndex = 18;
-            this.button7.Text = "REFRESH";
+            this.button7.Text = "刷新";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -287,9 +288,9 @@ namespace WindowsFormsApp1
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(3, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(210, 52);
+            this.label9.Size = new System.Drawing.Size(142, 52);
             this.label9.TabIndex = 18;
-            this.label9.Text = "Database";
+            this.label9.Text = "登记表";
             // 
             // button6
             // 
@@ -300,7 +301,7 @@ namespace WindowsFormsApp1
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(153, 57);
             this.button6.TabIndex = 23;
-            this.button6.Text = "EXIT";
+            this.button6.Text = "退出";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
@@ -313,7 +314,7 @@ namespace WindowsFormsApp1
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(153, 57);
             this.button4.TabIndex = 32;
-            this.button4.Text = "BACK";
+            this.button4.Text = "返回";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -325,15 +326,15 @@ namespace WindowsFormsApp1
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(339, 75);
+            this.label1.Size = new System.Drawing.Size(256, 75);
             this.label1.TabIndex = 33;
-            this.label1.Text = "Dashboard";
+            this.label1.Text = "管理面板";
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1176, 900);
             this.Controls.Add(this.label1);
