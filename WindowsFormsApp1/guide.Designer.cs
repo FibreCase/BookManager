@@ -36,9 +36,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Usernametextbox = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -128,50 +125,12 @@
             this.Usernametextbox.TabIndex = 14;
             this.Usernametextbox.Text = "Username";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._1_160919153T70_L1;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(688, 9);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(100, 100);
-            this.panel4.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(587, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 27);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "GPL v3.0";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(463, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 27);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Pulished by FibreCase";
-            // 
             // guide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._980;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 400);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.Usernametextbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
@@ -199,8 +158,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Usernametextbox;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
     }
 }
